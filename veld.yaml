@@ -8,6 +8,6 @@ services:
       file: ./veld_executable_13_word2vec/veld.yaml
       service: veld
     volumes:
-      - ./veld_data_9_we_training_data/:/veld/input/
-      - ./veld_data_11_word2vec_models/:/veld/output/models/
+      - ./veld_data_9_we_training_data/data/:/veld/input/
+      - ./veld_data_11_word2vec_models/data/:/veld/output/models/
       - ./veld_data_10_we_evaluation/:/veld/output/evaluation/
