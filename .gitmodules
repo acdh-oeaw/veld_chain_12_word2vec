@@ -10,3 +10,6 @@
 [submodule "veld_data_10_we_evaluation"]
 	path = veld_data_10_we_evaluation
 	url = https://github.com/acdh-oeaw/veld_data_10_we_evaluation.git
+[submodule "veld_executable_14_we_evaluation"]
+	path = veld_executable_14_we_evaluation
+	url = https://github.com/acdh-oeaw/veld_executable_14_we_evaluation.git
