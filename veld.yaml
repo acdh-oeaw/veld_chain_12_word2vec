@@ -17,10 +17,11 @@ services:
       file: ./veld_executable_14_we_evaluation/veld.yaml
       service: veld
     volumes:
-      - ./veld_data_11_word2vec_models/data/m2/:/veld/input/1/
-      - ./veld_data_10_we_evaluation/data/:/veld/input/2/
+      - ./veld_data_11_word2vec_models/data/m1/:/veld/input/model/
+      - ./veld_data_10_we_evaluation/data/eval_data.yaml:/veld/input/eval_data.yaml
       - ./veld_data_10_we_evaluation/data/:/veld/output/
+      - ./veld_data_10_we_evaluation/data/logs/:/veld/output/logs/
     environment:
       MODEL_ARCH: "word2vec_v1"
-      MODEL_ID: "m2"
-      MODEL_TRAIN_REPRODUCIBLE: "https://github.com/acdh-oeaw/veld_chain_12_word2vec/commit/382e33e2c5288b1902c206490609ddc85202d84e"
+      MODEL_ID: "m1"
+      MODEL_TRAIN_REPRODUCIBLE: null
