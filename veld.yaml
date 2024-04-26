@@ -9,6 +9,7 @@ services:
       service: veld
     volumes:
       - ./veld_data_9_we_training_data/data/:/veld/input/
+      - ./veld_data_9_we_training_data/data/:/veld/output/clean/
       - ./veld_data_11_word2vec_models/data/m3/:/veld/output/model/
 
   veld_eval:
