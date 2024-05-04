@@ -1,0 +1,15 @@
+x-veld:
+  chain:
+
+services:
+  veld:
+    extends:
+      file: ./veld_executable_13_word2vec/veld_clean.yaml
+      service: veld
+    volumes:
+      - ./veld_data_9_we_training_data/data/:/veld/input/
+      - ./veld_data_9_we_training_data/data/:/veld/output/
+    environment:
+      INPUT_FILE_NAME: "de_wiki.csv"
+      OUTPUT_FILE_NAME: "de_wiki_cleaned.csv"
+
