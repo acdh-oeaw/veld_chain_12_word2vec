@@ -1,0 +1,15 @@
+x-veld:
+  chain:
+
+services:
+  veld:
+    extends:
+      file: ./veld_executable_13_word2vec/veld_train.yaml
+      service: veld
+    volumes:
+      - ./veld_data_9_we_training_data/data/:/veld/input/
+      - ./veld_data_11_word2vec_models/data/m4/:/veld/output/
+    environment:
+      TRAIN_DATA_FILE: "de_wiki_cleaned.csv"
+      MODEL_NAME: "20240425word2vec_de.model"
+
