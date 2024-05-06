@@ -1,0 +1,18 @@
+x-veld:
+  chain:
+
+services:
+  veld:
+    extends:
+      file: ./veld_executable_14_we_evaluation/veld.yaml
+      service: veld
+    volumes:
+      - ./veld_data_11_word2vec_models/:/veld/input/1/
+      - ./veld_data_10_we_evaluation/:/veld/input/2/
+      - ./veld_data_10_we_evaluation/:/veld/output/
+    environment:
+      model_path: "/veld/input/1/data/m2/"
+      model_metadata_path: "/veld/input/1/data/m2/metadata.yaml"
+      eval_data_path: "/veld/input/2/data_evaluation/eval_data.yaml"
+      eval_results_folder: "/veld/output/data_results/"
+
