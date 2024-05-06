@@ -8,8 +8,15 @@ services:
       service: veld
     volumes:
       - ./veld_data_9_we_training_data/data/:/veld/input/
-      - ./veld_data_11_word2vec_models/data/m4/:/veld/output/
+      - ./veld_data_11_word2vec_models/data/:/veld/output/
     environment:
-      TRAIN_DATA_FILE: "de_wiki_cleaned.csv"
-      MODEL_NAME: "20240425word2vec_de.model"
+      train_data_path: "/veld/input/de_wiki_cleaned.csv"
+      train_data_description: "german wikipedia, subset, csv"
+      model_path: "/veld/output/m4/"
+      model_architecture: "word2vec_v1"
+      model_id: "m4"
+      vector_size: 300
+      window: 3
+      min_count: 1
+      workers: -1
 
