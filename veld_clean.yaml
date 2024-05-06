@@ -7,9 +7,9 @@ services:
       file: ./veld_executable_13_word2vec/veld_clean.yaml
       service: veld
     volumes:
-      - ./veld_data_9_we_training_data/data/:/veld/input/
-      - ./veld_data_9_we_training_data/data/:/veld/output/
+      - ./veld_data_9_we_training_data/:/veld/input/
+      - ./veld_data_9_we_training_data/:/veld/output/
     environment:
-      INPUT_FILE_NAME: "de_wiki.csv"
-      OUTPUT_FILE_NAME: "de_wiki_cleaned.csv"
+      unclean_file_path: "/veld/input/data/de_wiki.csv"
+      clean_file_path: "/veld/output/data/de_wiki_cleaned.csv"
 
