@@ -13,7 +13,7 @@ services:
       train_data_path: "/veld/input/data/de_wiki_cleaned.csv"
       train_data_description: "german wikipedia, subset, csv"
       model_path: "/veld/output/data/m4/"
-      model_architecture: "word2vec_v1"
+      training_architecture: "word2vec_v1"
       model_id: "m4"
       vector_size: 300
       window: 3
