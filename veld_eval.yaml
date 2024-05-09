@@ -13,6 +13,6 @@ services:
     environment:
       model_path: "/veld/input/1/data/m2/"
       model_metadata_path: "/veld/input/1/data/m2/metadata.yaml"
-      eval_data_path: "/veld/input/2/data_evaluation/eval_data.yaml"
-      eval_results_folder: "/veld/output/data_results/"
+      eval_data_path: "/veld/input/2/evaluation_gold_data/eval_data.yaml"
+      eval_results_folder: "/veld/output/evaluation_results/"
 
