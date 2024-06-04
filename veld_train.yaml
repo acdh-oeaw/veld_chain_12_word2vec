@@ -2,10 +2,10 @@ x-veld:
   chain:
 
 services:
-  veld:
+  veld_train:
     extends:
       file: ./veld_code_13_word2vec/veld_train.yaml
-      service: veld
+      service: veld_train
     volumes:
       - ./veld_data_9_we_training_data/:/veld/input/
       - ./veld_data_11_word2vec_models/:/veld/output/

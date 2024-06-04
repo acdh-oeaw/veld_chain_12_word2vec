@@ -2,7 +2,7 @@ x-veld:
   chain:
 
 services:
-  veld:
+  veld_eval:
     extends:
       file: ./veld_code_14_we_evaluation/veld.yaml
       service: veld
