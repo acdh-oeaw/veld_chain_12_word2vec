@@ -4,7 +4,7 @@ x-veld:
 services:
   veld:
     extends:
-      file: ./veld_executable_13_word2vec/veld_preprocess.yaml
+      file: ./veld_code_13_word2vec/veld_preprocess.yaml
       service: veld
     volumes:
       - ./veld_data_9_we_training_data/:/veld/input/
