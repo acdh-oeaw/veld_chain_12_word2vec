@@ -1,7 +1,6 @@
 x-veld:
   chain:
-    description:
-    topics:
+    description: "preprocess wikipedia data"
 
 services:
   veld_preprocess:

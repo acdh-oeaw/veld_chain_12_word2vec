@@ -1,7 +1,6 @@
 x-veld:
   chain:
-    description:
-    topics:
+    description: "evaluate word2vec model"
 
 services:
   veld_eval:

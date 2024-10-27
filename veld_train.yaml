@@ -1,7 +1,6 @@
 x-veld:
   chain:
-    description:
-    topics:
+    description: "train word2vec on wikipedia"
 
 services:
   veld_train:
